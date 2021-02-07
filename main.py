@@ -5,7 +5,7 @@ import os
 client = commands.Bot(command_prefix = ".")
 
 client.remove_command("help")
-token = os.environ.get('TECH_AND_GAMING_BOT')
+token = os.environ.get('CHEESE_BOT_TOKEN')
 
 @client.command()
 async def load(ctx, extension):

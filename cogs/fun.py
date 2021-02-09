@@ -12,6 +12,9 @@ class Fun(commands.Cog):
         if message.content.isupper():
             if (message.author.id != self.client.user.id):
                 await message.channel.send(f"{message.author.mention} WHY ALL CAPS?")
+        if message.content.lower().find("gg") != -1:
+            if (message.author.id != self.client.user.id):
+                await message.channel.send("gg")
 
     @commands.command(aliases=["p"])
     async def ping(self, ctx):
